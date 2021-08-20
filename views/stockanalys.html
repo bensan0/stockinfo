@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/static/js/stockanalys.js"></script>
+    <style>
+        .split {
+            display: block;
+            text-align: center;
+            height: 50px;
+        }
+
+        #StockMarketIndex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h4 {
+            display: block;
+            text-align: center;
+        }
+
+        #functionsdisplay {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-between;
+            flex-flow: wrap;
+            /* background-color: #61a0f8; */
+            width: 80%;
+            height: calc(90%);
+            padding: 5px;
+            /* border: 3px solid seagreen; */
+        }
+
+        .parent {
+            /* background-color: #f08bc3; */
+            /* border: 2px solid red; */
+            margin: 5px;
+            flex: 0 0 30%;
+            /* justify-content: center;
+            align-items: center; */
+            height: 500px;
+        }
+
+        .inputblock {
+            height: auto;
+        }
+
+        .tableblock {
+            height: 76%;
+            overflow: auto;
+        }
+
+        #filtertrans {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 40%;
+
+        }
+
+        #corptrans {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 90%;
+        }
+
+        #stocktrans {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 40%;
+        }
+
+        /* table tbody {
+            display: block;
+        } */
+
+        table thead,
+        tbody tr {
+            /* display: table; */
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        table thead {
+            width: calc(100% - 1em);
+            position: sticky;
+            top: 0;
+            background-color: whitesmoke;
+        }
+
+        #filter>.tableblock {
+            height: calc(70%);
+        }
+
+        #filtertrans>.tableblock {
+            height: calc(93%);
+        }
+
+        footer {
+            margin-bottom: 0%;
+            margin-left: 50%;
+            margin-right: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span>獲取每日個股收盤資訊</span>
+    <input id="stdailyyyyymmdd" placeholder="yyyymmdd,預設今日">
+    <button onclick="getStockDaily()">執行</button><br>
+    <text id="stdailystatus"></text>
+    <br>
+
+
+    <span>獲取每日三大法人資訊</span>
+    <input id="cpdailyyyyymmdd" placeholder="yyyymmdd,預設今日">
+    <button onclick="getCorpDaily()">執行</button><br>
+    <text id="cpdailystatus"></text>
+    <br>
+
+
+    <span>獲取股權分佈資訊</span>
+    <button onclick="getDistribution()">執行</button><br>
+    <text id="distributionstatus"></text>
+    <br>
+
+    <span class="split"></span>
+
+    <div class="container-xxl" id="functionsdisplay">
+
+        <div id="filter" name="" class="functionblock parent">
+            <div id="" name="" class="functionblock inputblock">
+                <h4>篩選交易量>前日個股</h4>
+                <input id="filterdate" type="text" placeholder="yyyymmdd,預設今日">
+                <input id="filterpercent" min="0" type="number" placeholder="今>昨%,預設40">
+                <input id="filterlowerlimit" type="number" min="0" placeholder="最低昨交易量,預設三千">
+                <!-- <input id="filterhigherlimit" placeholder="最高昨交易量,預設"> -->
+                <button onclick="filtTradingvol()">執行</button><br>
+                <button onclick="clearFilter()">清除</button><br>
+                <text id="filterstatus"></text>
+            </div>
+            <div id="" name="" class="functionblock tableblock">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">代號</th>
+                            <th scope="col">名稱</th>
+                            <th scope="col">業種</th>
+                        </tr>
+                    </thead>
+                    <tbody id="filtertbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="filtertrans" name="" class="functionblock parent">
+            <div id="" name="" class="functionblock inputblock">
+                <h4>個股交易資訊</h4>
+            </div>
+            <div id="" name="" class="functionblock tableblock">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">代號</th>
+                            <th scope="col">名稱</th>
+                            <th scope="col">成交量(張)</th>
+                            <th scope="col">收盤價</th>
+                            <th scope="col">漲跌幅(%)</th>
+                            <th scope="col">漲跌價差</th>
+                            <th scope="col">日期</th>
+                        </tr>
+                    </thead>
+                    <tbody id="filtertranstbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="stocktrans" name="" class="functionblock parent">
+            <div id="" name="" class="functionblock inputblock">
+                <h4>查詢個股今日~交易資訊</h4>
+                <input id="stocktransdays" type="number" min="1" placeholder="日數(含今日)">
+                <input id="stocktranscode" type="text" required="required" pattern="[A-Za-z0-9]{1,20}"
+                    placeholder="個股代號">
+                <button onclick="getStockTrans()">執行</button><br>
+                <button onclick="clearStockTrans()">清除</button><br>
+                <text id="stocktransstatus"></text>
+            </div>
+            <div id="" name="" class="functionblock tableblock">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">代號</th>
+                            <th scope="col">名稱</th>
+                            <th scope="col">成交量(張)</th>
+                            <th scope="col">收盤價</th>
+                            <th scope="col">漲跌幅(%)</th>
+                            <th scope="col">漲跌價差</th>
+                            <th scope="col">日期</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stocktranstbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="corptrans" name="" class="functionblock parent">
+            <div id="" name="" class="functionblock inputblock">
+                <h4>條件篩選個股三大法人交易資訊</h4>
+                <input id="corptransdays" type="number" min="1" placeholder="日數(含今日)">
+                <input id="corptranscode" type="text" required="required" pattern="[A-Za-z0-9]{1,20}"
+                    placeholder="個股代號">
+                <button onclick="getCorpTrans()">執行</button><br>
+                <button onclick="clearCorpTrans()">清除</button><br>
+                <text id="corptransstatus"></text>
+            </div>
+            <div id="" name="" class="functionblock tableblock">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">代號</th>
+                            <th scope="col">名稱</th>
+                            <th scope="col">外陸資買賣超</th>
+                            <th scope="col">外資自營商買賣超</th>
+                            <th scope="col">投信買賣超</th>
+                            <th scope="col">自營商買賣超</th>
+                            <th scope="col">自營商(自行)買賣超</th>
+                            <th scope="col">自營商(避險)買賣超</th>
+                            <th scope="col">三大法人合計買賣超(不計入自營商)</th>
+                            <th scope="col">日期</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corptranstbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>HOHOHO</p>
+    </footer>
+</body>
+
+</html>
