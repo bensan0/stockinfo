@@ -1,4 +1,4 @@
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('0050','元大台灣50',35,'','','',20210813),
 	 ('0051','元大中型100',35,'','','',NULL),
 	 ('0052','富邦科技',35,'','','',NULL),
@@ -9,7 +9,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('0057','富邦摩台',35,'','','',NULL),
 	 ('0061','元大寶滬深',35,'','','',NULL),
 	 ('006201','元大富櫃50',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('006203','元大MSCI台灣',35,'','','',NULL),
 	 ('006204','永豐臺灣加權',35,'','','',NULL),
 	 ('006205','富邦上証',35,'','','',NULL),
@@ -20,7 +20,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00631L','元大台灣50正2',35,'','','',NULL),
 	 ('00632R','元大台灣50反1',35,'','','',NULL),
 	 ('00633L','富邦上証正2',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00634R','富邦上証反1',35,'','','',NULL),
 	 ('00635U','期元大S&P黃金',35,'','','',NULL),
 	 ('00636','國泰中國A50',35,'','','',NULL),
@@ -31,7 +31,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00640L','富邦日本正2',35,'','','',NULL),
 	 ('00641R','富邦日本反1',35,'','','',NULL),
 	 ('00642U','期元大S&P石油',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00643','群益深証中小',35,'','','',NULL),
 	 ('00643K','群益深証中小+R',35,'','','',NULL),
 	 ('00645','富邦日本',35,'','','',NULL),
@@ -42,7 +42,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00651R','FH香港反1',35,'','','',NULL),
 	 ('00652','富邦印度',35,'','','',NULL),
 	 ('00653L','富邦印度正2',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00654R','富邦印度反1',35,'','','',NULL),
 	 ('00655L','國泰中國A50正2',35,'','','',NULL),
 	 ('00656R','國泰中國A50反1',35,'','','',NULL),
@@ -53,7 +53,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00662','富邦NASDAQ',35,'','','',NULL),
 	 ('00663L','國泰臺灣加權正2',35,'','','',NULL),
 	 ('00664R','國泰臺灣加權反1',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00665L','富邦恒生國企正2',35,'','','',NULL),
 	 ('00666R','富邦恒生國企反1',35,'','','',NULL),
 	 ('00668','國泰美國道瓊',35,'','','',NULL),
@@ -64,7 +64,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00673R','期元大S&P原油反1',35,'','','',NULL),
 	 ('00674R','期元大S&P黃金反1',35,'','','',NULL),
 	 ('00675L','富邦臺灣加權正2',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00676R','富邦臺灣加權反1',35,'','','',NULL),
 	 ('00678','群益NBI生技',35,'','','',NULL),
 	 ('00679B','元大美債20年',35,'','','',NULL),
@@ -75,7 +75,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00684R','期元大美元指反1',35,'','','',NULL),
 	 ('00685L','群益臺灣加權正2',35,'','','',NULL),
 	 ('00686R','群益臺灣加權反1',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00687B','國泰20年美債',35,'','','',NULL),
 	 ('00688L','國泰20年美債正2',35,'','','',NULL),
 	 ('00689R','國泰20年美債反1',35,'','','',NULL),
@@ -86,7 +86,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00695B','富邦美債7-10',35,'','','',NULL),
 	 ('00696B','富邦美債20年',35,'','','',NULL),
 	 ('00697B','元大美債7-10',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00700','富邦恒生國企',35,'','','',NULL),
 	 ('00701','國泰股利精選30',35,'','','',NULL),
 	 ('00702','國泰標普低波高息',35,'','','',NULL),
@@ -97,7 +97,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00709','富邦歐洲',35,'','','',NULL),
 	 ('00710B','FH彭博高收益債',35,'','','',NULL),
 	 ('00711B','FH彭博新興債',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00712','FH富時不動產',35,'','','',NULL),
 	 ('00713','元大台灣高息低波',35,'','','',NULL),
 	 ('00714','群益道瓊美國地產',35,'','','',NULL),
@@ -108,7 +108,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00720B','元大投資級公司債',35,'','','',NULL),
 	 ('00721B','元大中國債3-5',35,'','','',NULL),
 	 ('00722B','群益15年IG電信債',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00723B','群益15年IG科技債',35,'','','',NULL),
 	 ('00724B','群益10年IG金融債',35,'','','',NULL),
 	 ('00725B','國泰投資級公司債',35,'','','',NULL),
@@ -119,7 +119,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00731','FH富時高息低波',35,'','','',NULL),
 	 ('00732','國泰RMB短期報酬',35,'','','',NULL),
 	 ('00733','富邦臺灣中小',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00734B','台新JPM新興債',35,'','','',NULL),
 	 ('00735','國泰臺韓科技',35,'','','',NULL),
 	 ('00736','國泰新興市場',35,'','','',NULL),
@@ -130,7 +130,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00741B','富邦全球高收債',35,'','','',NULL),
 	 ('00742','新光內需收益',35,'','','',NULL),
 	 ('00743','國泰中國A150',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00744B','國泰中國政金債5+',35,'','','',NULL),
 	 ('00745B','富邦中政債0-1',35,'','','',NULL),
 	 ('00746B','富邦A級公司債',35,'','','',NULL),
@@ -141,7 +141,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00751B','元大AAA至A公司債',35,'','','',NULL),
 	 ('00752','中信中國50',35,'','','',NULL),
 	 ('00753L','中信中國50正2',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00754B','群益AAA-AA公司債',35,'','','',NULL),
 	 ('00755B','群益15年IG公用債',35,'','','',NULL),
 	 ('00756B','群益15年EM主權債',35,'','','',NULL),
@@ -152,7 +152,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00761B','國泰A級公司債',35,'','','',NULL),
 	 ('00762','元大全球AI',35,'','','',NULL),
 	 ('00763U','期街口道瓊銅',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00764B','群益25年美債',35,'','','',NULL),
 	 ('00765B','群益中國政金債',35,'','','',NULL),
 	 ('00768B','FH20年美債',35,'','','',NULL),
@@ -163,7 +163,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00774B','新光中國政金綠債',35,'','','',NULL),
 	 ('00774C','新光中政金綠債+R',35,'','','',NULL),
 	 ('00775B','新光投等債15+',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00777B','凱基AAA至A公司債',35,'','','',NULL),
 	 ('00778B','凱基金融債20+',35,'','','',NULL),
 	 ('00779B','凱基美債25+',35,'','','',NULL),
@@ -174,7 +174,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00784B','富邦中國投等債',35,'','','',NULL),
 	 ('00785B','富邦金融投等債',35,'','','',NULL),
 	 ('00786B','元大10年IG銀行債',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00787B','元大10年IG醫療債',35,'','','',NULL),
 	 ('00788B','元大10年IG電能債',35,'','','',NULL),
 	 ('00789B','FH公司債A3',35,'','','',NULL),
@@ -185,7 +185,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00794B','群益7+中國政金債',35,'','','',NULL),
 	 ('00795B','中信美國公債20年',35,'','','',NULL),
 	 ('00796B','中信中國債7-10',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00799B','國泰A級醫療債',35,'','','',NULL),
 	 ('008201','BP上證50',35,'','','',NULL),
 	 ('00830','國泰費城半導體',35,'','','',NULL),
@@ -196,7 +196,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00838B','永豐7-10年中國債',35,'','','',NULL),
 	 ('00840B','凱基IG精選15+',35,'','','',NULL),
 	 ('00841B','凱基AAA-AA公司債',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00842B','台新美元銀行債',35,'','','',NULL),
 	 ('00843B','台新中國政策債',35,'','','',NULL),
 	 ('00844B','新光15年IG金融債',35,'','','',NULL),
@@ -207,7 +207,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00849B','中信EM主權債0-5',35,'','','',NULL),
 	 ('00850','元大臺灣ESG永續',35,'','','',NULL),
 	 ('00851','台新全球AI',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00852L','國泰美國道瓊正2',35,'','','',NULL),
 	 ('00853B','統一美債10年Aa-A',35,'','','',NULL),
 	 ('00856B','永豐1-3年美公債',35,'','','',NULL),
@@ -218,7 +218,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00861','元大全球未來通訊',35,'','','',NULL),
 	 ('00862B','中信投資級公司債',35,'','','',NULL),
 	 ('00863B','中信全球電信債',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00864B','中信美國公債0-1',35,'','','',NULL),
 	 ('00865B','國泰US短期公債',35,'','','',NULL),
 	 ('00867B','新光A-BBB電信債',35,'','','',NULL),
@@ -229,7 +229,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00876','元大未來關鍵科技',35,'','','',NULL),
 	 ('00877','FH中國5G',35,'','','',NULL),
 	 ('00878','國泰永續高股息',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00879B','第一金美債0-1',35,'','','',NULL),
 	 ('00880B','第一金電信債15+',35,'','','',NULL),
 	 ('00881','國泰台灣5G+',35,'','','',NULL),
@@ -240,7 +240,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('00886','永豐美國科技',35,'','','',NULL),
 	 ('00887','永豐中國科技50大',35,'','','',NULL),
 	 ('00888','永豐台灣ESG',35,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('00889B','凱基ESG新興債15+',35,'','','',NULL),
 	 ('00890B','凱基ESGBBB債15+',35,'','','',NULL),
 	 ('00891','中信關鍵半導體',35,'','','',NULL),
@@ -251,7 +251,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1103','嘉泥',1,'','','',NULL),
 	 ('1104','環泥',1,'','','',NULL),
 	 ('1108','幸福',1,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1109','信大',1,'','','',NULL),
 	 ('1110','東泥',1,'','','',NULL),
 	 ('1201','味全',3,'','','',NULL),
@@ -262,7 +262,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1216','統一',3,'','','',NULL),
 	 ('1217','愛之味',3,'','','',NULL),
 	 ('1218','泰山',3,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1219','福壽',3,'','','',NULL),
 	 ('1220','台榮',3,'','','',NULL),
 	 ('1225','福懋油',3,'','','',NULL),
@@ -273,7 +273,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1233','天仁',3,'','','',NULL),
 	 ('1234','黑松',3,'','','',NULL),
 	 ('1235','興泰',3,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1236','宏亞',3,'','','',NULL),
 	 ('1240','茂生農經',34,'','','',NULL),
 	 ('1256','鮮活果汁-KY',3,'','','',NULL),
@@ -284,7 +284,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1301','台塑',4,'','','',NULL),
 	 ('1303','南亞',4,'','','',NULL),
 	 ('1304','台聚',4,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1305','華夏',4,'','','',NULL),
 	 ('1307','三芳',4,'','','',NULL),
 	 ('1308','亞聚',4,'','','',NULL),
@@ -295,7 +295,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1313','聯成',4,'','','',NULL),
 	 ('1314','中石化',4,'','','',NULL),
 	 ('1315','達新',4,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1316','上曜',20,'','','',NULL),
 	 ('1319','東陽',13,'','','',NULL),
 	 ('1321','大洋',4,'','','',NULL),
@@ -306,7 +306,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1336','台翰',16,'','','',NULL),
 	 ('1337','再生-KY',4,'','','',NULL),
 	 ('1338','廣華-KY',13,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1339','昭輝',13,'','','',NULL),
 	 ('1340','勝悅-KY',4,'','','',NULL),
 	 ('1341','富林-KY',4,'','','',NULL),
@@ -317,7 +317,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1413','宏洲',5,'','','',NULL),
 	 ('1414','東和',5,'','','',NULL),
 	 ('1416','廣豐',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1417','嘉裕',5,'','','',NULL),
 	 ('1418','東華',5,'','','',NULL),
 	 ('1419','新紡',5,'','','',NULL),
@@ -328,7 +328,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1436','華友聯',20,'','','',NULL),
 	 ('1437','勤益控',30,'','','',NULL),
 	 ('1438','三地開發',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1439','中和',5,'','','',NULL),
 	 ('1440','南紡',5,'','','',NULL),
 	 ('1441','大東',5,'','','',NULL),
@@ -339,7 +339,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1446','宏和',5,'','','',NULL),
 	 ('1447','力鵬',5,'','','',NULL),
 	 ('1449','佳和',5,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1451','年興',5,'','','',NULL),
 	 ('1452','宏益',5,'','','',NULL),
 	 ('1453','大將',20,'','','',NULL),
@@ -350,7 +350,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1459','聯發',5,'','','',NULL),
 	 ('1460','宏遠',5,'','','',NULL),
 	 ('1463','強盛',5,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1464','得力',5,'','','',NULL),
 	 ('1465','偉全',5,'','','',NULL),
 	 ('1466','聚隆',5,'','','',NULL),
@@ -361,7 +361,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1472','三洋紡',5,'','','',NULL),
 	 ('1473','台南',5,'','','',NULL),
 	 ('1474','弘裕',5,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1475','業旺',5,'','','',NULL),
 	 ('1476','儒鴻',5,'','','',NULL),
 	 ('1477','聚陽',5,'','','',NULL),
@@ -372,7 +372,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1512','瑞利',13,'','','',NULL),
 	 ('1513','中興電',6,'','','',NULL),
 	 ('1514','亞力',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1515','力山',6,'','','',NULL),
 	 ('1516','川飛',30,'','','',NULL),
 	 ('1517','利奇',6,'','','',NULL),
@@ -383,7 +383,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1525','江申',13,'','','',NULL),
 	 ('1526','日馳',6,'','','',NULL),
 	 ('1527','鑽全',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1528','恩德',6,'','','',NULL),
 	 ('1529','樂士',6,'','','',NULL),
 	 ('1530','亞崴',6,'','','',NULL),
@@ -394,7 +394,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1536','和大',13,'','','',NULL),
 	 ('1537','廣隆',6,'','','',NULL),
 	 ('1538','正峰',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1539','巨庭',6,'','','',NULL),
 	 ('1540','喬福',6,'','','',NULL),
 	 ('1541','錩泰',6,'','','',NULL),
@@ -405,7 +405,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1569','濱川',14,'','','',NULL),
 	 ('1570','力肯',6,'','','',NULL),
 	 ('1580','新麥',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1582','信錦',16,'','','',NULL),
 	 ('1583','程泰',6,'','','',NULL),
 	 ('1584','精剛',30,'','','',NULL),
@@ -416,7 +416,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1591','駿吉-KY',6,'','','',NULL),
 	 ('1593','祺驊',8,'','','',NULL),
 	 ('1595','川寶',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1597','直得',6,'','','',NULL),
 	 ('1598','岱宇',8,'','','',NULL),
 	 ('1599','宏佳騰',6,'','','',NULL),
@@ -427,7 +427,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1609','大亞',7,'','','',NULL),
 	 ('1611','中電',7,'','','',NULL),
 	 ('1612','宏泰',7,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1614','三洋電',7,'','','',NULL),
 	 ('1615','大山',7,'','','',NULL),
 	 ('1616','億泰',7,'','','',NULL),
@@ -438,7 +438,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1702','南僑',3,'','','',NULL),
 	 ('1707','葡萄王',8,'','','',NULL),
 	 ('1708','東鹼',9,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1709','和益',9,'','','',NULL),
 	 ('1710','東聯',9,'','','',NULL),
 	 ('1711','永光',9,'','','',NULL),
@@ -449,7 +449,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1718','中纖',9,'','','',NULL),
 	 ('1720','生達',8,'','','',NULL),
 	 ('1721','三晃',9,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1722','台肥',9,'','','',NULL),
 	 ('1723','中碳',9,'','','',NULL),
 	 ('1724','台硝',9,'','','',NULL),
@@ -460,7 +460,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1731','美吾華',8,'','','',NULL),
 	 ('1732','毛寶',9,'','','',NULL),
 	 ('1733','五鼎',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1734','杏輝',8,'','','',NULL),
 	 ('1735','日勝化',9,'','','',NULL),
 	 ('1736','喬山',8,'','','',NULL),
@@ -471,7 +471,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1762','中化生',8,'','','',NULL),
 	 ('1773','勝一',9,'','','',NULL),
 	 ('1776','展宇',9,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1777','生泰',8,'','','',NULL),
 	 ('1781','合世',8,'','','',NULL),
 	 ('1783','和康生',8,'','','',NULL),
@@ -482,7 +482,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1789','神隆',8,'','','',NULL),
 	 ('1795','美時',8,'','','',NULL),
 	 ('1796','金穎生技',3,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1799','易威',8,'','','',NULL),
 	 ('1802','台玻',10,'','','',NULL),
 	 ('1805','寶徠',20,'','','',NULL),
@@ -493,7 +493,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('1813','寶利徠',8,'','','',NULL),
 	 ('1815','富喬',16,'','','',NULL),
 	 ('1817','凱撒衛',10,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('1903','士紙',2,'','','',NULL),
 	 ('1904','正隆',2,'','','',NULL),
 	 ('1905','華紙',2,'','','',NULL),
@@ -504,7 +504,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2002A','中鋼特',11,'','','',NULL),
 	 ('2006','東和鋼鐵',11,'','','',NULL),
 	 ('2007','燁興',11,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2008','高興昌',11,'','','',NULL),
 	 ('2009','第一銅',11,'','','',NULL),
 	 ('2010','春源',11,'','','',NULL),
@@ -515,7 +515,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2017','官田鋼',11,'','','',NULL),
 	 ('2020','美亞',11,'','','',NULL),
 	 ('2022','聚亨',11,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2023','燁輝',11,'','','',NULL),
 	 ('2024','志聯',11,'','','',NULL),
 	 ('2025','千興',11,'','','',NULL),
@@ -526,7 +526,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2031','新光鋼',11,'','','',NULL),
 	 ('2032','新鋼',11,'','','',NULL),
 	 ('2033','佳大',11,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2034','允強',11,'','','',NULL),
 	 ('2035','唐榮',11,'','','',NULL),
 	 ('2038','海光',11,'','','',NULL),
@@ -537,7 +537,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2063','世鎧',11,'','','',NULL),
 	 ('2064','晉椿',11,'','','',NULL),
 	 ('2065','世豐',11,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2066','世德',6,'','','',NULL),
 	 ('2067','嘉鋼',6,'','','',NULL),
 	 ('2069','運錩',11,'','','',NULL),
@@ -548,7 +548,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2104','國際中橡',12,'','','',NULL),
 	 ('2105','正新',12,'','','',NULL),
 	 ('2106','建大',12,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2107','厚生',12,'','','',NULL),
 	 ('2108','南帝',12,'','','',NULL),
 	 ('2109','華豐',12,'','','',NULL),
@@ -559,7 +559,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2206','三陽工業',13,'','','',NULL),
 	 ('2207','和泰車',13,'','','',NULL),
 	 ('2208','台船',21,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2211','長榮鋼',11,'','','',NULL),
 	 ('2221','大甲',30,'','','',NULL),
 	 ('2227','裕日車',13,'','','',NULL),
@@ -570,7 +570,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2235','謚源',6,'','','',NULL),
 	 ('2236','百達-KY',13,'','','',NULL),
 	 ('2239','英利-KY',13,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2241','艾姆勒',13,'','','',NULL),
 	 ('2243','宏旭-KY',13,'','','',NULL),
 	 ('2247','汎德永業',13,'','','',NULL),
@@ -581,7 +581,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2305','全友',14,'','','',NULL),
 	 ('2308','台達電',16,'','','',NULL),
 	 ('2312','金寶',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2313','華通',16,'','','',NULL),
 	 ('2314','台揚',18,'','','',NULL),
 	 ('2316','楠梓電',16,'','','',NULL),
@@ -592,7 +592,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2327','國巨',16,'','','',NULL),
 	 ('2328','廣宇',16,'','','',NULL),
 	 ('2329','華泰',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2330','台灣積體電路製造股份有限公司',15,'2,593億','15.2兆','依客戶之訂單與其提供之產品設計說明，以從事製造與銷售積體電路以及其他晶圓半導體裝置。提供前述產品之封裝與測試服務、積體電路之電腦輔助設計技術服務。提供製造光罩及其設計服務。',20210813),
 	 ('2331','精英',14,'','','',NULL),
 	 ('2332','友訊',18,'','','',NULL),
@@ -603,7 +603,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2344','華邦電',15,'','','',NULL),
 	 ('2345','智邦',18,'','','',NULL),
 	 ('2347','聯強',28,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2348','海悅',30,'','','',NULL),
 	 ('2349','錸德',27,'','','',NULL),
 	 ('2351','順德',15,'','','',NULL),
@@ -614,7 +614,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2356','英業達',14,'','','',NULL),
 	 ('2357','華碩',14,'','','',NULL),
 	 ('2358','廷鑫',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2359','所羅門',17,'','','',NULL),
 	 ('2360','致茂',17,'','','',NULL),
 	 ('2362','藍天',14,'','','',NULL),
@@ -625,7 +625,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2368','金像電',16,'','','',NULL),
 	 ('2369','菱生',15,'','','',NULL),
 	 ('2371','大同',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2373','震旦行',17,'','','',NULL),
 	 ('2374','佳能',27,'','','',NULL),
 	 ('2375','凱美',16,'','','',NULL),
@@ -636,7 +636,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2382','廣達',14,'','','',NULL),
 	 ('2383','台光電',16,'','','',NULL),
 	 ('2385','群光',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2387','精元',14,'','','',NULL),
 	 ('2388','威盛',15,'','','',NULL),
 	 ('2390','云辰',17,'','','',NULL),
@@ -647,7 +647,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2399','映泰',14,'','','',NULL),
 	 ('2401','凌陽',15,'','','',NULL),
 	 ('2402','毅嘉',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2404','漢唐',17,'','','',NULL),
 	 ('2405','浩鑫',14,'','','',NULL),
 	 ('2406','國碩',27,'','','',NULL),
@@ -658,7 +658,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2414','精技',28,'','','',NULL),
 	 ('2415','錩新',16,'','','',NULL),
 	 ('2417','圓剛',14,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2419','仲琦',18,'','','',NULL),
 	 ('2420','新巨',16,'','','',NULL),
 	 ('2421','建準',16,'','','',NULL),
@@ -669,7 +669,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2427','三商電',19,'','','',NULL),
 	 ('2428','興勤',16,'','','',NULL),
 	 ('2429','銘旺科',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2430','燦坤',28,'','','',NULL),
 	 ('2431','聯昌',16,'','','',NULL),
 	 ('2433','互盛電',17,'','','',NULL),
@@ -680,7 +680,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2440','太空梭',16,'','','',NULL),
 	 ('2441','超豐',15,'','','',NULL),
 	 ('2442','新美齊',14,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2443','億麗',30,'','','',NULL),
 	 ('2444','兆勁',18,'','','',NULL),
 	 ('2449','京元電子',15,'','','',NULL),
@@ -691,7 +691,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2455','全新',18,'','','',NULL),
 	 ('2456','奇力新',16,'','','',NULL),
 	 ('2457','飛宏',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2458','義隆',15,'','','',NULL),
 	 ('2459','敦吉',17,'','','',NULL),
 	 ('2460','建通精密工業股份有限公司',16,'16.92億','48.98億','精密電子產品及其零件、電器類機器之製造、加工暨銅之原、廢料買賣內外銷、電鍍加工及前述有關產品進出口貿易業務',20210813),
@@ -702,7 +702,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2466','冠西電',27,'','','',NULL),
 	 ('2467','志聖',16,'','','',NULL),
 	 ('2468','華經',19,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2471','資通',19,'','','',NULL),
 	 ('2472','立隆電',16,'','','',NULL),
 	 ('2474','可成',17,'','','',NULL),
@@ -713,7 +713,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2481','強茂',15,'','','',NULL),
 	 ('2482','連宇',17,'','','',NULL),
 	 ('2483','百容',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2484','希華',16,'','','',NULL),
 	 ('2485','兆赫',18,'','','',NULL),
 	 ('2486','一詮',27,'','','',NULL),
@@ -724,7 +724,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2493','揚博',16,'','','',NULL),
 	 ('2495','普安',17,'','','',NULL),
 	 ('2496','卓越',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2497','怡利電',13,'','','',NULL),
 	 ('2498','宏達電',18,'','','',NULL),
 	 ('2501','國建',20,'','','',NULL),
@@ -735,7 +735,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2511','太子',20,'','','',NULL),
 	 ('2514','龍邦',30,'','','',NULL),
 	 ('2515','中工',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2516','新建',20,'','','',NULL),
 	 ('2520','冠德',20,'','','',NULL),
 	 ('2524','京城',20,'','','',NULL),
@@ -746,7 +746,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2535','達欣工',20,'','','',NULL),
 	 ('2536','宏普',20,'','','',NULL),
 	 ('2537','聯上發',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2538','基泰',20,'','','',NULL),
 	 ('2539','櫻花建',20,'','','',NULL),
 	 ('2540','愛山林',20,'','','',NULL),
@@ -757,7 +757,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2547','日勝生',20,'','','',NULL),
 	 ('2548','華固',20,'','','',NULL),
 	 ('2596','綠意',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2597','潤弘',20,'','','',NULL),
 	 ('2601','益航',26,'','','',NULL),
 	 ('2603','長榮',21,'','','',NULL),
@@ -768,7 +768,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2609','陽明',21,'','','',NULL),
 	 ('2610','華航',21,'','','',NULL),
 	 ('2611','志信',21,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2612','中航',21,'','','',NULL),
 	 ('2613','中櫃',21,'','','',NULL),
 	 ('2614','東森',30,'','','',NULL),
@@ -779,7 +779,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2630','亞航',21,'','','',NULL),
 	 ('2633','台灣高鐵',21,'','','',NULL),
 	 ('2634','漢翔',21,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2636','台驊投控',21,'','','',NULL),
 	 ('2637','慧洋-KY',21,'','','',NULL),
 	 ('2640','大車隊',30,'','','',NULL),
@@ -790,7 +790,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2702','華園',22,'','','',NULL),
 	 ('2704','國賓',22,'','','',NULL),
 	 ('2705','六福',22,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2706','第一店',22,'','','',NULL),
 	 ('2707','晶華',22,'','','',NULL),
 	 ('2712','遠雄來',22,'','','',NULL),
@@ -801,7 +801,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2724','富驛-KY',22,'','','',NULL),
 	 ('2726','雅茗-KY',22,'','','',NULL),
 	 ('2727','王品',22,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2729','瓦城',22,'','','',NULL),
 	 ('2731','雄獅',22,'','','',NULL),
 	 ('2732','六角',22,'','','',NULL),
@@ -812,7 +812,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2743','山富',22,'','','',NULL),
 	 ('2745','五福',22,'','','',NULL),
 	 ('2748','雲品',22,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2752','豆府',22,'','','',NULL),
 	 ('2754','亞洲藏壽司',22,'','','',NULL),
 	 ('2755','揚秦',22,'','','',NULL),
@@ -823,7 +823,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2820','華票',23,'','','',NULL),
 	 ('2823','中壽',24,'','','',NULL),
 	 ('2832','台產',24,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2834','臺企銀',23,'','','',NULL),
 	 ('2836','高雄銀',23,'','','',NULL),
 	 ('2836A','高雄銀甲特',23,'','','',NULL),
@@ -834,7 +834,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2849','安泰銀',23,'','','',NULL),
 	 ('2850','新產',24,'','','',NULL),
 	 ('2851','中再保',24,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2852','第一保',24,'','','',NULL),
 	 ('2855','統一證',29,'','','',NULL),
 	 ('2867','三商壽',24,'','','',NULL),
@@ -845,7 +845,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2882','國泰金',25,'','','',NULL),
 	 ('2882A','國泰特',25,'','','',NULL),
 	 ('2882B','國泰金乙特',25,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2883','開發金',25,'','','',NULL),
 	 ('2884','玉山金',25,'','','',NULL),
 	 ('2885','元大金',25,'','','',NULL),
@@ -856,7 +856,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2888','新光金',25,'','','',NULL),
 	 ('2888A','新光金甲特',25,'','','',NULL),
 	 ('2888B','新光金乙特',25,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2889','國票金',25,'','','',NULL),
 	 ('2890','永豐金',25,'','','',NULL),
 	 ('2891','中信金',25,'','','',NULL),
@@ -867,7 +867,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2897A','王道銀甲特',23,'','','',NULL),
 	 ('2901','欣欣',26,'','','',NULL),
 	 ('2903','遠百',26,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2904','匯僑',30,'','','',NULL),
 	 ('2905','三商',26,'','','',NULL),
 	 ('2906','高林',26,'','','',NULL),
@@ -878,7 +878,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2913','農林',26,'','','',NULL),
 	 ('2915','潤泰全',26,'','','',NULL),
 	 ('2916','滿心',26,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('2923','鼎固-KY',20,'','','',NULL),
 	 ('2924','東凌-KY',26,'','','',NULL),
 	 ('2926','誠品生活',33,'','','',NULL),
@@ -889,7 +889,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('2939','凱羿-KY',26,'','','',NULL),
 	 ('3002','歐格',14,'','','',NULL),
 	 ('3003','健和興',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3004','豐達科',11,'','','',NULL),
 	 ('3005','神基',14,'','','',NULL),
 	 ('3006','晶豪科',15,'','','',NULL),
@@ -900,7 +900,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3014','聯陽',15,'','','',NULL),
 	 ('3015','全漢',16,'','','',NULL),
 	 ('3016','嘉晶',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3017','奇鋐',14,'','','',NULL),
 	 ('3018','同開',17,'','','',NULL),
 	 ('3019','亞光',27,'','','',NULL),
@@ -911,7 +911,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3025','星通',18,'','','',NULL),
 	 ('3026','禾伸堂',16,'','','',NULL),
 	 ('3027','盛達',18,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3028','增你強',28,'','','',NULL),
 	 ('3029','零壹',19,'','','',NULL),
 	 ('3030','德律',17,'','','',NULL),
@@ -922,7 +922,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3035','智原',15,'','','',NULL),
 	 ('3036','文曄',28,'','','',NULL),
 	 ('3037','欣興',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3038','全台',27,'','','',NULL),
 	 ('3040','遠見',30,'','','',NULL),
 	 ('3041','揚智',15,'','','',NULL),
@@ -933,7 +933,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3046','建碁',14,'','','',NULL),
 	 ('3047','訊舟',18,'','','',NULL),
 	 ('3048','益登',28,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3049','和鑫',27,'','','',NULL),
 	 ('3050','鈺德',27,'','','',NULL),
 	 ('3051','力特',27,'','','',NULL),
@@ -944,7 +944,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3057','喬鼎',14,'','','',NULL),
 	 ('3058','立德',16,'','','',NULL),
 	 ('3059','華晶科',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3060','銘異',14,'','','',NULL),
 	 ('3062','建漢',18,'','','',NULL),
 	 ('3064','泰偉',33,'','','',NULL),
@@ -955,7 +955,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3078','僑威',16,'','','',NULL),
 	 ('3081','聯亞',18,'','','',NULL),
 	 ('3083','網龍',33,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3085','新零售',32,'','','',NULL),
 	 ('3086','華義',33,'','','',NULL),
 	 ('3088','艾訊',14,'','','',NULL),
@@ -966,7 +966,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3094','聯傑',15,'','','',NULL),
 	 ('3095','及成',18,'','','',NULL),
 	 ('3105','穩懋',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3114','好德',16,'','','',NULL),
 	 ('3115','寶島極',16,'','','',NULL),
 	 ('3118','進階',8,'','','',NULL),
@@ -977,7 +977,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3138','耀登',18,'','','',NULL),
 	 ('3141','晶宏',15,'','','',NULL),
 	 ('3144','新揚科',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3147','大綜',19,'','','',NULL),
 	 ('3149','正達',27,'','','',NULL),
 	 ('3152','璟德',18,'','','',NULL),
@@ -988,7 +988,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3169','亞信',15,'','','',NULL),
 	 ('3171','新洲',26,'','','',NULL),
 	 ('3176','基亞',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3178','公準',6,'','','',NULL),
 	 ('3188','鑫龍騰',20,'','','',NULL),
 	 ('3189','景碩',15,'','','',NULL),
@@ -999,7 +999,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3207','耀勝',16,'','','',NULL),
 	 ('3209','全科',28,'','','',NULL),
 	 ('3211','順達',14,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3213','茂訊',14,'','','',NULL),
 	 ('3217','優群',16,'','','',NULL),
 	 ('3218','大學光',8,'','','',NULL),
@@ -1010,7 +1010,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3227','原相',15,'','','',NULL),
 	 ('3228','金麗科',15,'','','',NULL),
 	 ('3229','晟鈦',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3230','錦明',27,'','','',NULL),
 	 ('3231','緯創',14,'','','',NULL),
 	 ('3232','昱捷',28,'','','',NULL),
@@ -1021,7 +1021,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3259','鑫創',15,'','','',NULL),
 	 ('3260','威剛',15,'','','',NULL),
 	 ('3264','欣銓',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3265','台星科',15,'','','',NULL),
 	 ('3266','昇陽',20,'','','',NULL),
 	 ('3268','海德威',15,'','','',NULL),
@@ -1032,7 +1032,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3287','廣寰科',14,'','','',NULL),
 	 ('3288','點晶',16,'','','',NULL),
 	 ('3289','宜特',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3290','東浦',16,'','','',NULL),
 	 ('3293','鈊象',33,'','','',NULL),
 	 ('3294','英濟',16,'','','',NULL),
@@ -1043,7 +1043,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3306','鼎天',18,'','','',NULL),
 	 ('3308','聯德',16,'','','',NULL),
 	 ('3310','佳穎',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3311','閎暉',18,'','','',NULL),
 	 ('3312','弘憶股',28,'','','',NULL),
 	 ('3313','斐成',30,'','','',NULL),
@@ -1054,7 +1054,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3324','雙鴻',17,'','','',NULL),
 	 ('3325','旭品',14,'','','',NULL),
 	 ('3332','幸康',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3338','泰碩',16,'','','',NULL),
 	 ('3339','泰谷',27,'','','',NULL),
 	 ('3346','麗清',13,'','','',NULL),
@@ -1065,7 +1065,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3362','先進光',27,'','','',NULL),
 	 ('3363','上詮',18,'','','',NULL),
 	 ('3372','典範',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3373','熱映',17,'','','',NULL),
 	 ('3374','精材',15,'','','',NULL),
 	 ('3376','新日興',16,'','','',NULL),
@@ -1076,7 +1076,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3390','旭軟',16,'','','',NULL),
 	 ('3402','漢科',17,'','','',NULL),
 	 ('3406','玉晶光',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3413','京鼎',15,'','','',NULL),
 	 ('3416','融程電',14,'','','',NULL),
 	 ('3419','譁裕',18,'','','',NULL),
@@ -1087,7 +1087,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3438','類比科',15,'','','',NULL),
 	 ('3441','聯一光',27,'','','',NULL),
 	 ('3443','創意',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3444','利機',28,'','','',NULL),
 	 ('3450','聯鈞',15,'','','',NULL),
 	 ('3454','晶睿',27,'','','',NULL),
@@ -1098,7 +1098,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3481','群創',27,'','','',NULL),
 	 ('3483','力致',14,'','','',NULL),
 	 ('3484','崧騰',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3489','森寶',20,'','','',NULL),
 	 ('3490','單井',27,'','','',NULL),
 	 ('3491','昇達科',18,'','','',NULL),
@@ -1109,7 +1109,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3501','維熹',16,'','','',NULL),
 	 ('3504','揚明光',27,'','','',NULL),
 	 ('3508','位速',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3511','矽瑪',16,'','','',NULL),
 	 ('3512','皇龍',16,'','','',NULL),
 	 ('3515','華擎',14,'','','',NULL),
@@ -1120,7 +1120,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3522','御頂',22,'','','',NULL),
 	 ('3523','迎輝',27,'','','',NULL),
 	 ('3526','凡甲',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3527','聚積',15,'','','',NULL),
 	 ('3528','安馳',28,'','','',NULL),
 	 ('3529','力旺',15,'','','',NULL),
@@ -1131,7 +1131,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3535','晶彩科',27,'','','',NULL),
 	 ('3536','誠創',15,'','','',NULL),
 	 ('3537','堡達',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3540','曜越',14,'','','',NULL),
 	 ('3541','西柏',17,'','','',NULL),
 	 ('3543','州巧',27,'','','',NULL),
@@ -1142,7 +1142,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3551','世禾',17,'','','',NULL),
 	 ('3552','同致',17,'','','',NULL),
 	 ('3555','重鵬',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3556','禾瑞亞',15,'','','',NULL),
 	 ('3557','嘉威',30,'','','',NULL),
 	 ('3558','神準',18,'','','',NULL),
@@ -1153,7 +1153,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3576','聯合再生能源股份有限公司',27,'150.8億','293.3億','研究、開發、設計、製造及銷售(1) 太陽能電池及相關系統(2)太陽能發電模組及晶圓(3) 兼營與本公司產品相關之進出口貿易業務',20210819),
 	 ('3577','泓格',14,'','','',NULL),
 	 ('3580','友威科',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3581','博磊',15,'','','',NULL),
 	 ('3583','辛耘',15,'','','',NULL),
 	 ('3587','閎康',17,'','','',NULL),
@@ -1164,7 +1164,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3596','智易',18,'','','',NULL),
 	 ('3597','映興',16,'','','',NULL),
 	 ('3605','宏致',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3607','谷崧',16,'','','',NULL),
 	 ('3609','東林',16,'','','',NULL),
 	 ('3611','鼎翰',14,'','','',NULL),
@@ -1175,7 +1175,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3624','光頡',16,'','','',NULL),
 	 ('3625','西勝',14,'','','',NULL),
 	 ('3628','盈正',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3629','地心引力',33,'','','',NULL),
 	 ('3630','新鉅科',27,'','','',NULL),
 	 ('3631','晟楠',16,'','','',NULL),
@@ -1186,7 +1186,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3652','精聯',14,'','','',NULL),
 	 ('3653','健策',16,'','','',NULL),
 	 ('3661','世芯-KY',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3663','鑫科',17,'','','',NULL),
 	 ('3664','安瑞-KY',18,'','','',NULL),
 	 ('3665','貿聯-KY',17,'','','',NULL),
@@ -1197,7 +1197,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3675','德微',15,'','','',NULL),
 	 ('3679','新至陞',16,'','','',NULL),
 	 ('3680','家登',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3682','亞太電',18,'','','',NULL),
 	 ('3684','榮昌',18,'','','',NULL),
 	 ('3685','元創精密',6,'','','',NULL),
@@ -1208,7 +1208,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3693','營邦',14,'','','',NULL),
 	 ('3694','海華',18,'','','',NULL),
 	 ('3701','大眾控',14,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3702','大聯大',28,'','','',NULL),
 	 ('3702A','大聯大甲特',28,'','','',NULL),
 	 ('3703','欣陸',20,'','','',NULL),
@@ -1219,7 +1219,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('3708','上緯投控',9,'','','',NULL),
 	 ('3709','鑫聯大投控',14,'','','',NULL),
 	 ('3710','連展投控',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('3711','日月光投控',15,'','','',NULL),
 	 ('3712','永崴投控',14,'','','',NULL),
 	 ('3713','新晶投控',27,'','','',NULL),
@@ -1230,7 +1230,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4106','雃博',8,'','','',NULL),
 	 ('4107','邦特',8,'','','',NULL),
 	 ('4108','懷特',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4109','加捷生醫',8,'','','',NULL),
 	 ('4111','濟生',8,'','','',NULL),
 	 ('4113','聯上',20,'','','',NULL),
@@ -1241,7 +1241,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4121','優盛',8,'','','',NULL),
 	 ('4123','晟德',8,'','','',NULL),
 	 ('4126','太醫',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4127','天良',8,'','','',NULL),
 	 ('4128','中天',8,'','','',NULL),
 	 ('4129','聯合',8,'','','',NULL),
@@ -1252,7 +1252,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4138','曜亞',8,'','','',NULL),
 	 ('4139','馬光-KY',8,'','','',NULL),
 	 ('4141','龍燈-KY',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4142','國光生',8,'','','',NULL),
 	 ('4147','中裕',8,'','','',NULL),
 	 ('4148','全宇生技-KY',8,'','','',NULL),
@@ -1263,7 +1263,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4157','太景*-KY',8,'','','',NULL),
 	 ('4160','創源',8,'','','',NULL),
 	 ('4161','聿新科',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4162','智擎',8,'','','',NULL),
 	 ('4163','鐿鈦',8,'','','',NULL),
 	 ('4164','承業醫',8,'','','',NULL),
@@ -1274,7 +1274,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4174','浩鼎',8,'','','',NULL),
 	 ('4175','杏一',8,'','','',NULL),
 	 ('4183','福永生技',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4188','安克',8,'','','',NULL),
 	 ('4190','佐登-KY',8,'','','',NULL),
 	 ('4192','杏國',8,'','','',NULL),
@@ -1285,7 +1285,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4304','勝昱',4,'','','',NULL),
 	 ('4305','世坤',4,'','','',NULL),
 	 ('4306','炎洲',4,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4401','東隆興',5,'','','',NULL),
 	 ('4402','福大',5,'','','',NULL),
 	 ('4406','新昕纖',5,'','','',NULL),
@@ -1296,7 +1296,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4419','元勝',5,'','','',NULL),
 	 ('4420','光明',5,'','','',NULL),
 	 ('4426','利勤',5,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4429','聚紡',5,'','','',NULL),
 	 ('4430','耀億',30,'','','',NULL),
 	 ('4432','銘旺實',5,'','','',NULL),
@@ -1307,7 +1307,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4503','金雨',6,'','','',NULL),
 	 ('4506','崇友',6,'','','',NULL),
 	 ('4510','高鋒',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4513','福裕',6,'','','',NULL),
 	 ('4523','永彰',6,'','','',NULL),
 	 ('4526','東台',6,'','','',NULL),
@@ -1318,7 +1318,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4532','瑞智',6,'','','',NULL),
 	 ('4533','協易機',6,'','','',NULL),
 	 ('4534','慶騰',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4535','至興',6,'','','',NULL),
 	 ('4536','拓凱',30,'','','',NULL),
 	 ('4538','大詠城',6,'','','',NULL),
@@ -1329,7 +1329,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4545','銘鈺',16,'','','',NULL),
 	 ('4549','桓達',6,'','','',NULL),
 	 ('4550','長佳',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4551','智伸科',13,'','','',NULL),
 	 ('4552','力達-KY',6,'','','',NULL),
 	 ('4554','橙的',17,'','','',NULL),
@@ -1340,7 +1340,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4561','健椿',6,'','','',NULL),
 	 ('4562','穎漢',6,'','','',NULL),
 	 ('4563','百德',6,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4564','元翎',6,'','','',NULL),
 	 ('4566','時碩工業',6,'','','',NULL),
 	 ('4568','科際精密',6,'','','',NULL),
@@ -1351,7 +1351,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4581','光隆精密-KY',13,'','','',NULL),
 	 ('4609','唐鋒',7,'','','',NULL),
 	 ('4702','中美實',9,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4706','大恭',9,'','','',NULL),
 	 ('4707','磐亞',9,'','','',NULL),
 	 ('4711','永純',9,'','','',NULL),
@@ -1362,7 +1362,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4721','美琪瑪',9,'','','',NULL),
 	 ('4722','國精化',9,'','','',NULL),
 	 ('4726','永昕',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4728','雙美',8,'','','',NULL),
 	 ('4729','熒茂',27,'','','',NULL),
 	 ('4735','豪展',8,'','','',NULL),
@@ -1373,7 +1373,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4743','合一',8,'','','',NULL),
 	 ('4744','皇將',8,'','','',NULL),
 	 ('4745','合富-KY',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4746','台耀',8,'','','',NULL),
 	 ('4747','強生',8,'','','',NULL),
 	 ('4754','國碳科',9,'','','',NULL),
@@ -1384,7 +1384,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4766','南寶',9,'','','',NULL),
 	 ('4767','誠泰科技',9,'','','',NULL),
 	 ('4803','VHQ-KY',33,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4804','大略-KY',22,'','','',NULL),
 	 ('4806','昇華',33,'','','',NULL),
 	 ('4807','日成-KY',26,'','','',NULL),
@@ -1395,7 +1395,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4907','富宇',20,'','','',NULL),
 	 ('4908','前鼎',18,'','','',NULL),
 	 ('4909','新復興',18,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4911','德英',8,'','','',NULL),
 	 ('4912','聯德控股-KY',16,'','','',NULL),
 	 ('4915','致伸',16,'','','',NULL),
@@ -1406,7 +1406,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4930','燦星網',7,'','','',NULL),
 	 ('4931','新盛力',14,'','','',NULL),
 	 ('4933','友輝',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4934','太極',27,'','','',NULL),
 	 ('4935','茂林-KY',27,'','','',NULL),
 	 ('4938','和碩',14,'','','',NULL),
@@ -1417,7 +1417,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4945','陞達科技',15,'','','',NULL),
 	 ('4946','辣椒',33,'','','',NULL),
 	 ('4950','牧東',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4952','凌通',15,'','','',NULL),
 	 ('4953','緯軟',19,'','','',NULL),
 	 ('4956','光鋐',27,'','','',NULL),
@@ -1428,7 +1428,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4967','十銓',15,'','','',NULL),
 	 ('4968','立積',15,'','','',NULL),
 	 ('4971','IET-KY',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4972','湯石照明',27,'','','',NULL),
 	 ('4973','廣穎',15,'','','',NULL),
 	 ('4974','亞泰',16,'','','',NULL),
@@ -1439,7 +1439,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('4989','榮科',16,'','','',NULL),
 	 ('4991','環宇-KY',15,'','','',NULL),
 	 ('4994','傳奇',19,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('4995','晶達',27,'','','',NULL),
 	 ('4999','鑫禾',16,'','','',NULL),
 	 ('5007','三星',11,'','','',NULL),
@@ -1450,7 +1450,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5015','華祺',11,'','','',NULL),
 	 ('5016','松和',11,'','','',NULL),
 	 ('5102','富強',12,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5201','凱衛',19,'','','',NULL),
 	 ('5202','力新',19,'','','',NULL),
 	 ('5203','訊連',19,'','','',NULL),
@@ -1461,7 +1461,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5211','蒙恬',19,'','','',NULL),
 	 ('5212','凌網',19,'','','',NULL),
 	 ('5213','亞昕',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5215','科嘉-KY',14,'','','',NULL),
 	 ('5220','萬達光電',27,'','','',NULL),
 	 ('5223','安力-KY',14,'','','',NULL),
@@ -1472,7 +1472,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5236','凌陽創新',15,'','','',NULL),
 	 ('5243','乙盛-KY',27,'','','',NULL),
 	 ('5245','智晶',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5251','天鉞電',27,'','','',NULL),
 	 ('5258','虹堡',14,'','','',NULL),
 	 ('5263','智崴',33,'','','',NULL),
@@ -1483,7 +1483,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5278','尚凡',32,'','','',NULL),
 	 ('5281','大峽谷-KY',27,'','','',NULL),
 	 ('5283','禾聯碩',7,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5284','jpp-KY',30,'','','',NULL),
 	 ('5285','界霖',15,'','','',NULL),
 	 ('5287','數字',32,'','','',NULL),
@@ -1494,7 +1494,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5301','寶得利',22,'','','',NULL),
 	 ('5302','太欣',15,'','','',NULL),
 	 ('5306','桂盟',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5309','系統電',16,'','','',NULL),
 	 ('5310','天剛',19,'','','',NULL),
 	 ('5312','寶島科',8,'','','',NULL),
@@ -1505,7 +1505,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5328','華容',16,'','','',NULL),
 	 ('5340','建榮',16,'','','',NULL),
 	 ('5344','立衛',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5345','天揚',30,'','','',NULL),
 	 ('5347','世界',15,'','','',NULL),
 	 ('5348','系通',18,'','','',NULL),
@@ -1516,7 +1516,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5364','力麗店',22,'','','',NULL),
 	 ('5371','中光電',27,'','','',NULL),
 	 ('5381','合正',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5383','金利',17,'','','',NULL),
 	 ('5386','青雲',14,'','','',NULL),
 	 ('5388','中磊',18,'','','',NULL),
@@ -1527,7 +1527,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5425','台半',15,'','','',NULL),
 	 ('5426','振發',14,'','','',NULL),
 	 ('5432','達威',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5434','崇越',28,'','','',NULL),
 	 ('5438','東友',14,'','','',NULL),
 	 ('5439','高技',16,'','','',NULL),
@@ -1538,7 +1538,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5457','宣德',16,'','','',NULL),
 	 ('5460','同協',16,'','','',NULL),
 	 ('5464','霖宏',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5465','富驊',14,'','','',NULL),
 	 ('5468','凱鈺',15,'','','',NULL),
 	 ('5469','瀚宇博',16,'','','',NULL),
@@ -1549,7 +1549,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5481','新華',30,'','','',NULL),
 	 ('5483','中美晶',15,'','','',NULL),
 	 ('5484','慧友',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5487','通泰',15,'','','',NULL),
 	 ('5488','松普',16,'','','',NULL),
 	 ('5489','彩富',17,'','','',NULL),
@@ -1560,7 +1560,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5511','德昌',20,'','','',NULL),
 	 ('5512','力麒',20,'','','',NULL),
 	 ('5514','三豐',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5515','建國',20,'','','',NULL),
 	 ('5516','雙喜',20,'','','',NULL),
 	 ('5519','隆大',20,'','','',NULL),
@@ -1571,7 +1571,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5525','順天',20,'','','',NULL),
 	 ('5529','志嘉',20,'','','',NULL),
 	 ('5530','龍巖',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5531','鄉林',20,'','','',NULL),
 	 ('5533','皇鼎',20,'','','',NULL),
 	 ('5534','長虹',20,'','','',NULL),
@@ -1582,7 +1582,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5601','台聯櫃',21,'','','',NULL),
 	 ('5603','陸海',21,'','','',NULL),
 	 ('5604','中連貨',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5607','遠雄港',21,'','','',NULL),
 	 ('5608','四維航',21,'','','',NULL),
 	 ('5609','中菲行',21,'','','',NULL),
@@ -1593,7 +1593,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5820','日盛金',25,'','','',NULL),
 	 ('5864','致和證',29,'','','',NULL),
 	 ('5871','中租-KY',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('5871A','中租-KY甲特',30,'','','',NULL),
 	 ('5876','上海商銀',23,'','','',NULL),
 	 ('5878','台名',24,'','','',NULL),
@@ -1604,7 +1604,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('5905','南仁湖',26,'','','',NULL),
 	 ('5906','台南-KY',26,'','','',NULL),
 	 ('5907','大洋-KY',26,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6005','群益證',29,'','','',NULL),
 	 ('6015','宏遠證',29,'','','',NULL),
 	 ('6016','康和證',29,'','','',NULL),
@@ -1615,7 +1615,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6026','福邦證',29,'','','',NULL),
 	 ('6101','寬魚國際',33,'','','',NULL),
 	 ('6103','合邦',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6104','創惟',15,'','','',NULL),
 	 ('6108','競國',16,'','','',NULL),
 	 ('6109','亞元',18,'','','',NULL),
@@ -1626,7 +1626,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6115','鎰勝',16,'','','',NULL),
 	 ('6116','彩晶',27,'','','',NULL),
 	 ('6117','迎廣',14,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6118','建達',28,'','','',NULL),
 	 ('6120','達運',27,'','','',NULL),
 	 ('6121','新普',14,'','','',NULL),
@@ -1637,7 +1637,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6126','信音',16,'','','',NULL),
 	 ('6127','九豪',16,'','','',NULL),
 	 ('6128','上福',14,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6129','普誠',15,'','','',NULL),
 	 ('6130','星寶國際',8,'','','',NULL),
 	 ('6133','金橋',16,'','','',NULL),
@@ -1648,7 +1648,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6140','訊達',19,'','','',NULL),
 	 ('6141','柏承',16,'','','',NULL),
 	 ('6142','友勁',18,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6143','振曜',18,'','','',NULL),
 	 ('6144','得利影',33,'','','',NULL),
 	 ('6146','耕興',17,'','','',NULL),
@@ -1659,7 +1659,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6152','百一',18,'','','',NULL),
 	 ('6153','嘉聯益',16,'','','',NULL),
 	 ('6154','順發',28,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6155','鈞寶',16,'','','',NULL),
 	 ('6156','松上',16,'','','',NULL),
 	 ('6158','禾昌',16,'','','',NULL),
@@ -1670,7 +1670,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6165','浪凡',30,'','','',NULL),
 	 ('6166','凌華',14,'','','',NULL),
 	 ('6167','久正',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6168','宏齊',27,'','','',NULL),
 	 ('6169','昱泉',33,'','','',NULL),
 	 ('6170','統振',18,'','','',NULL),
@@ -1681,7 +1681,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6175','立敦',16,'','','',NULL),
 	 ('6176','瑞儀',27,'','','',NULL),
 	 ('6177','達麗',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6179','亞通',30,'','','',NULL),
 	 ('6180','橘子',33,'','','',NULL),
 	 ('6182','合晶',15,'','','',NULL),
@@ -1692,7 +1692,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6187','萬潤',17,'','','',NULL),
 	 ('6188','廣明',14,'','','',NULL),
 	 ('6189','豐藝',28,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6190','萬泰科',18,'','','',NULL),
 	 ('6191','精成科',16,'','','',NULL),
 	 ('6192','巨路',17,'','','',NULL),
@@ -1703,7 +1703,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6198','凌泰',15,'','','',NULL),
 	 ('6199','天品',30,'','','',NULL),
 	 ('6201','亞弘電',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6202','盛群',15,'','','',NULL),
 	 ('6203','海韻電',16,'','','',NULL),
 	 ('6204','艾華',16,'','','',NULL),
@@ -1714,7 +1714,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6209','今國光',27,'','','',NULL),
 	 ('6210','慶生',16,'','','',NULL),
 	 ('6212','理銘',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6213','聯茂',16,'','','',NULL),
 	 ('6214','精誠',19,'','','',NULL),
 	 ('6215','和椿',17,'','','',NULL),
@@ -1725,7 +1725,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6220','岳豐',16,'','','',NULL),
 	 ('6221','晉泰',19,'','','',NULL),
 	 ('6222','上揚',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6223','旺矽',15,'','','',NULL),
 	 ('6224','聚鼎',16,'','','',NULL),
 	 ('6225','天瀚',27,'','','',NULL),
@@ -1736,7 +1736,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6230','尼得科超眾',14,'','','',NULL),
 	 ('6231','系微',19,'','','',NULL),
 	 ('6233','旺玖',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6234','高僑',27,'','','',NULL),
 	 ('6235','華孚',14,'','','',NULL),
 	 ('6236','康呈',30,'','','',NULL),
@@ -1747,7 +1747,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6242','立康',8,'','','',NULL),
 	 ('6243','迅杰',15,'','','',NULL),
 	 ('6244','茂迪',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6245','立端',18,'','','',NULL),
 	 ('6246','臺龍',27,'','','',NULL),
 	 ('6247','淇譽電',17,'','','',NULL),
@@ -1758,7 +1758,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6261','久元',15,'','','',NULL),
 	 ('6263','普萊德',18,'','','',NULL),
 	 ('6264','富裔',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6265','方土昶',28,'','','',NULL),
 	 ('6266','泰詠',16,'','','',NULL),
 	 ('6269','台郡',16,'','','',NULL),
@@ -1769,7 +1769,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6276','安鈦克',14,'','','',NULL),
 	 ('6277','宏正',14,'','','',NULL),
 	 ('6278','台表科',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6279','胡連',16,'','','',NULL),
 	 ('6281','全國電',28,'','','',NULL),
 	 ('6282','康舒',16,'','','',NULL),
@@ -1780,7 +1780,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6288','聯嘉',13,'','','',NULL),
 	 ('6289','華上',27,'','','',NULL),
 	 ('6290','良維',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6291','沛亨',15,'','','',NULL),
 	 ('6292','迅德',16,'','','',NULL),
 	 ('6294','智基',33,'','','',NULL),
@@ -1791,7 +1791,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6412','群電',16,'','','',NULL),
 	 ('6414','樺漢',14,'','','',NULL),
 	 ('6415','矽力-KY',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6416','瑞祺電通',18,'','','',NULL),
 	 ('6417','韋僑',18,'','','',NULL),
 	 ('6418','詠昇',16,'','','',NULL),
@@ -1802,7 +1802,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6432','今展科',16,'','','',NULL),
 	 ('6435','大中',15,'','','',NULL),
 	 ('6438','迅得',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6441','廣錠',14,'','','',NULL),
 	 ('6442','光聖',18,'','','',NULL),
 	 ('6443','元晶',27,'','','',NULL),
@@ -1813,7 +1813,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6457','紘康',15,'','','',NULL),
 	 ('6461','益得',8,'','','',NULL),
 	 ('6462','神盾',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6464','台數科',30,'','','',NULL),
 	 ('6465','威潤',18,'','','',NULL),
 	 ('6469','大樹',8,'','','',NULL),
@@ -1824,7 +1824,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6485','點序',15,'','','',NULL),
 	 ('6486','互動',18,'','','',NULL),
 	 ('6488','環球晶',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6491','晶碩',8,'','','',NULL),
 	 ('6492','生華科',8,'','','',NULL),
 	 ('6494','九齊',15,'','','',NULL),
@@ -1835,7 +1835,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6506','雙邦',5,'','','',NULL),
 	 ('6508','惠光',34,'','','',NULL),
 	 ('6509','聚和',9,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6510','精測',15,'','','',NULL),
 	 ('6512','啟發電',17,'','','',NULL),
 	 ('6514','芮特-KY',18,'','','',NULL),
@@ -1846,7 +1846,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6527','明達醫',8,'','','',NULL),
 	 ('6530','創威',18,'','','',NULL),
 	 ('6531','愛普',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6532','瑞耘',15,'','','',NULL),
 	 ('6533','晶心科',15,'','','',NULL),
 	 ('6535','順藥',8,'','','',NULL),
@@ -1857,7 +1857,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6548','長科*',15,'','','',NULL),
 	 ('6552','易華電',15,'','','',NULL),
 	 ('6556','勝品',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6558','興能高',17,'','','',NULL),
 	 ('6560','欣普羅',27,'','','',NULL),
 	 ('6561','是方',18,'','','',NULL),
@@ -1868,7 +1868,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6574','霈方',8,'','','',NULL),
 	 ('6576','逸達',8,'','','',NULL),
 	 ('6577','勁豐',14,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6578','達邦蛋白',34,'','','',NULL),
 	 ('6579','研揚',14,'','','',NULL),
 	 ('6581','鋼聯',30,'','','',NULL),
@@ -1879,7 +1879,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6591','動力-KY',14,'','','',NULL),
 	 ('6592','和潤企業',30,'','','',NULL),
 	 ('6593','台灣銘板',19,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6594','展匯科',15,'','','',NULL),
 	 ('6596','寬宏藝術',33,'','','',NULL),
 	 ('6598','ABC-KY',8,'','','',NULL),
@@ -1890,7 +1890,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6613','朋億',17,'','','',NULL),
 	 ('6615','慧智',8,'','','',NULL),
 	 ('6616','特昇-KY',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6624','萬年清',30,'','','',NULL),
 	 ('6625','必應',30,'','','',NULL),
 	 ('6629','泰金-KY',30,'','','',NULL),
@@ -1901,7 +1901,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6649','台生材',8,'','','',NULL),
 	 ('6651','全宇昕',15,'','','',NULL),
 	 ('6654','天正國際',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6655','科定',30,'','','',NULL),
 	 ('6661','威健生技',8,'','','',NULL),
 	 ('6662','樂斯科',8,'','','',NULL),
@@ -1912,7 +1912,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6669','緯穎',14,'','','',NULL),
 	 ('6670','復盛應用',30,'','','',NULL),
 	 ('6671','三能-KY',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6672','騰輝電子-KY',16,'','','',NULL),
 	 ('6674','鋐寶科技',18,'','','',NULL),
 	 ('6679','鈺太',15,'','','',NULL),
@@ -1923,7 +1923,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6698','旭暉應材',17,'','','',NULL),
 	 ('6703','軒郁',8,'','','',NULL),
 	 ('6706','惠特',27,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6712','長聖',8,'','','',NULL),
 	 ('6715','嘉基',16,'','','',NULL),
 	 ('6716','應廣',15,'','','',NULL),
@@ -1934,7 +1934,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6741','91APP*-KY',32,'','','',NULL),
 	 ('6743','安普新',17,'','','',NULL),
 	 ('6747','亨泰光',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('6751','智聯服務',19,'','','',NULL),
 	 ('6752','叡揚',19,'','','',NULL),
 	 ('6754','匯僑設計',30,'','','',NULL),
@@ -1945,7 +1945,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('6776','展碁國際',28,'','','',NULL),
 	 ('6781','AES-KY',16,'','','',NULL),
 	 ('6803','崑鼎',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('7402','邑錡',27,'','','',NULL),
 	 ('7556','意德士',15,'','','',NULL),
 	 ('8011','台通',18,'','','',NULL),
@@ -1956,7 +1956,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8028','昇陽半導體',15,'','','',NULL),
 	 ('8032','光菱',28,'','','',NULL),
 	 ('8033','雷虎',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8034','榮群',18,'','','',NULL),
 	 ('8038','長園科',16,'','','',NULL),
 	 ('8039','台虹',16,'','','',NULL),
@@ -1967,7 +1967,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8046','南電',16,'','','',NULL),
 	 ('8047','星雲',17,'','','',NULL),
 	 ('8048','德勝',18,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8049','晶采',27,'','','',NULL),
 	 ('8050','廣積',14,'','','',NULL),
 	 ('8054','安國',15,'','','',NULL),
@@ -1978,7 +1978,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8068','全達',28,'','','',NULL),
 	 ('8069','元太',27,'','','',NULL),
 	 ('8070','長華*',28,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8071','能率網通',16,'','','',NULL),
 	 ('8072','陞泰',28,'','','',NULL),
 	 ('8074','鉅橡',16,'','','',NULL),
@@ -1989,7 +1989,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8084','巨虹',28,'','','',NULL),
 	 ('8085','福華',17,'','','',NULL),
 	 ('8086','宏捷科',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8087','華鎂鑫',27,'','','',NULL),
 	 ('8088','品安',15,'','','',NULL),
 	 ('8089','康全電訊',18,'','','',NULL),
@@ -2000,7 +2000,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8097','常珵',18,'','','',NULL),
 	 ('8099','大世科',19,'','','',NULL),
 	 ('8101','華冠',18,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8103','瀚荃',16,'','','',NULL),
 	 ('8104','錸寶',27,'','','',NULL),
 	 ('8105','凌巨',27,'','','',NULL),
@@ -2011,7 +2011,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8112','至上',28,'','','',NULL),
 	 ('8114','振樺電',14,'','','',NULL),
 	 ('8121','越峰',16,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8131','福懋科',15,'','','',NULL),
 	 ('8147','正淩',16,'','','',NULL),
 	 ('8150','南茂',15,'','','',NULL),
@@ -2022,7 +2022,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8182','加高',16,'','','',NULL),
 	 ('8183','精星',17,'','','',NULL),
 	 ('8201','無敵',17,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8210','勤誠',14,'','','',NULL),
 	 ('8213','志超',16,'','','',NULL),
 	 ('8215','明基材',27,'','','',NULL),
@@ -2033,7 +2033,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8255','朋程',6,'','','',NULL),
 	 ('8261','富鼎',15,'','','',NULL),
 	 ('8271','宇瞻',15,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8277','商丞',15,'','','',NULL),
 	 ('8279','生展',8,'','','',NULL),
 	 ('8284','三竹',19,'','','',NULL),
@@ -2044,7 +2044,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8342','益張',30,'','','',NULL),
 	 ('8349','恒耀',11,'','','',NULL),
 	 ('8354','冠好',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8358','金居',16,'','','',NULL),
 	 ('8367','建新國際',21,'','','',NULL),
 	 ('8374','羅昇',6,'','','',NULL),
@@ -2055,7 +2055,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8404','百和興業-KY',30,'','','',NULL),
 	 ('8406','金可-KY',8,'','','',NULL),
 	 ('8409','商之器',8,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8410','森田',14,'','','',NULL),
 	 ('8411','福貞-KY',30,'','','',NULL),
 	 ('8415','大國鋼',11,'','','',NULL),
@@ -2066,7 +2066,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8422','可寧衛',30,'','','',NULL),
 	 ('8423','保綠-KY',30,'','','',NULL),
 	 ('8424','惠普',20,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8426','紅木-KY',30,'','','',NULL),
 	 ('8427','基勝-KY',30,'','','',NULL),
 	 ('8429','金麗-KY',26,'','','',NULL),
@@ -2077,7 +2077,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8436','大江',8,'','','',NULL),
 	 ('8437','大地-KY',30,'','','',NULL),
 	 ('8440','綠電',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8442','威宏-KY',30,'','','',NULL),
 	 ('8443','阿瘦',26,'','','',NULL),
 	 ('8444','綠河-KY',30,'','','',NULL),
@@ -2088,7 +2088,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8462','柏文',22,'','','',NULL),
 	 ('8463','潤泰材',30,'','','',NULL),
 	 ('8464','億豐',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8466','美吉吉-KY',30,'','','',NULL),
 	 ('8467','波力-KY',30,'','','',NULL),
 	 ('8472','夠麻吉',32,'','','',NULL),
@@ -2099,7 +2099,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8480','泰昇-KY',30,'','','',NULL),
 	 ('8481','政伸',30,'','','',NULL),
 	 ('8482','商億-KY',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8488','吉源-KY',30,'','','',NULL),
 	 ('8489','三貝德',30,'','','',NULL),
 	 ('8499','鼎炫-KY',17,'','','',NULL),
@@ -2110,7 +2110,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8916A','光隆甲特',30,'','','',NULL),
 	 ('8917','欣泰',31,'','','',NULL),
 	 ('8921','沈氏',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8923','時報',33,'','','',NULL),
 	 ('8924','大田',30,'','','',NULL),
 	 ('8926','台汽電',31,'','','',NULL),
@@ -2121,7 +2121,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8931','大汽電',31,'','','',NULL),
 	 ('8932','宏大',30,'','','',NULL),
 	 ('8933','愛地雅',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('8935','邦泰',30,'','','',NULL),
 	 ('8936','國統',30,'','','',NULL),
 	 ('8937','合騏',30,'','','',NULL),
@@ -2132,7 +2132,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('8996','高力',6,'','','',NULL),
 	 ('9802','鈺齊-KY',30,'','','',NULL),
 	 ('9902','台火',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('9904','寶成',30,'','','',NULL),
 	 ('9905','大華',30,'','','',NULL),
 	 ('9906','欣巴巴',20,'','','',NULL),
@@ -2143,7 +2143,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('9912','偉聯',14,'','','',NULL),
 	 ('9914','美利達',30,'','','',NULL),
 	 ('9917','中保科',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('9918','欣天然',31,'','','',NULL),
 	 ('9919','康那香',30,'','','',NULL),
 	 ('9921','巨大',30,'','','',NULL),
@@ -2154,7 +2154,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('9928','中視',30,'','','',NULL),
 	 ('9929','秋雨',30,'','','',NULL),
 	 ('9930','中聯資源',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('9931','欣高',31,'','','',NULL),
 	 ('9933','中鼎',30,'','','',NULL),
 	 ('9934','成霖',30,'','','',NULL),
@@ -2165,7 +2165,7 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('9940','信義',30,'','','',NULL),
 	 ('9941','裕融',30,'','','',NULL),
 	 ('9941A','裕融甲特',30,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('9942','茂順',30,'','','',NULL),
 	 ('9943','好樂迪',22,'','','',NULL),
 	 ('9944','新麗',30,'','','',NULL),
@@ -2176,6 +2176,6 @@ INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_va
 	 ('9951','皇田',6,'','','',NULL),
 	 ('9955','佳龍',30,'','','',NULL),
 	 ('9958','世紀鋼',11,'','','',NULL);
-INSERT INTO financial2.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
+INSERT INTO stockinfo.stock_basic_info (code,name,industry_id,capital,market_value,intro,updated_date) VALUES
 	 ('9960','邁達康',26,'','','',NULL),
 	 ('9962','有益',11,'','','',NULL);

@@ -64,8 +64,10 @@ func DownloadDailyCorpTrans(yyyymmdd string) (string, error) {
 
 	// Write the body to file
 	wr, err := io.Copy(out, resp.Body)
-	if err != nil || wr == 0 {
+	if err != nil {
 		return "", err
+	} else if wr == 0 {
+		return "", errors.New("無內容")
 	}
 	fmt.Println("每日三大法人下載結束")
 	return filedir + filename + yyyymmdd + sub, nil

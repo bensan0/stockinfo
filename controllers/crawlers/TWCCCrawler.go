@@ -51,8 +51,7 @@ func DownloadTWCCDistribution() (string, error) {
 	if err != nil {
 		return "", err
 	} else if wr == 0 {
-		err := errors.New("無內容")
-		return "", err
+		return "", errors.New("無內容")
 	}
 	fmt.Println("股權分佈下載結束")
 	return "downloads/TWCCDistribution.csv", nil
