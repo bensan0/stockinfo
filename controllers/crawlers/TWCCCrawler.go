@@ -50,7 +50,7 @@ func DownloadTWCCDistribution() (string, error) {
 	wr, err := io.Copy(out, resp.Body)
 	if err != nil {
 		return "", err
-	} else if wr == 0 {
+	} else if wr < 10 {
 		return "", errors.New("無內容")
 	}
 	fmt.Println("股權分佈下載結束")
