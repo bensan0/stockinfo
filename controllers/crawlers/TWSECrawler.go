@@ -36,12 +36,16 @@ func DailyCorp(yyyymmdd string) error {
 //下載三大法人每日交易csv
 func DownloadDailyCorpTrans(yyyymmdd string) (string, error) {
 	fmt.Println("開始下載每日三大法人")
-	now := time.Now()
-	if weekday := now.Weekday(); weekday == time.Saturday || weekday == time.Sunday {
-		return "", errors.New("六/日休市")
-	}
+	var yyyymmddTime time.Time
 	if len(yyyymmdd) == 0 {
-		yyyymmdd = now.Format("20060102")
+		yyyymmddTime = time.Now()
+		yyyymmdd = yyyymmddTime.Format("20060102")
+
+	} else {
+		yyyymmddTime, _ = time.Parse("20060102", yyyymmdd)
+	}
+	if weekday := yyyymmddTime.Weekday(); weekday == time.Saturday || weekday == time.Sunday {
+		return "", errors.New("六/日休市")
 	}
 	var filedir string = "downloads/"
 	var filename string = "dailycorp_"
@@ -66,7 +70,7 @@ func DownloadDailyCorpTrans(yyyymmdd string) (string, error) {
 	wr, err := io.Copy(out, resp.Body)
 	if err != nil {
 		return "", err
-	} else if wr < 10 {
+	} else if wr <= 2 {
 		return "", errors.New("無內容")
 	}
 	fmt.Println("每日三大法人下載結束")
@@ -156,14 +160,16 @@ func DailyQuot(yyyymmdd string) (bool, error) {
 //下載每日收盤行情(全部(不含權證、牛熊證))csv
 func DownloadDailyQuotation(yyyymmdd string) (string, error) {
 	fmt.Println("開始下載每日收盤行情")
-
-	//日期處理
-	now := time.Now()
-	if weekday := now.Weekday(); weekday == time.Saturday || weekday == time.Sunday {
-		return "", errors.New("六/日休市")
-	}
+	var yyyymmddTime time.Time
 	if len(yyyymmdd) == 0 {
-		yyyymmdd = now.Format("20060102")
+		yyyymmddTime = time.Now()
+		yyyymmdd = yyyymmddTime.Format("20060102")
+
+	} else {
+		yyyymmddTime, _ = time.Parse("20060102", yyyymmdd)
+	}
+	if weekday := yyyymmddTime.Weekday(); weekday == time.Saturday || weekday == time.Sunday {
+		return "", errors.New("六/日休市")
 	}
 	var filedir string = "downloads/"
 	var filename string = "dailyquot_"
@@ -188,8 +194,8 @@ func DownloadDailyQuotation(yyyymmdd string) (string, error) {
 	wr, err := io.Copy(out, resp.Body)
 	if err != nil {
 		return "", err
-	} else if wr == 0 {
-		return "", err
+	} else if wr <= 2 {
+		return "", errors.New("無內容")
 	}
 	fmt.Println("每日收盤行情下載結束")
 	return filedir + filename + yyyymmdd + sub, nil
@@ -223,11 +229,19 @@ func DailyQuotFilter(filename string) error {
 		stdaily.Name = strArr[1]
 		tv, _ := strconv.Atoi(strings.Replace(strArr[2], ",", "", -1))
 		stdaily.TradingVol = tv / 1000
-		stdaily.Deal, _ = strconv.Atoi(strArr[3])
-		stdaily.Opening, _ = strconv.ParseFloat(strArr[5], 64)
-		stdaily.Highest, _ = strconv.ParseFloat(strArr[6], 64)
-		stdaily.Lowest, _ = strconv.ParseFloat(strArr[7], 64)
-		stdaily.Closing, _ = strconv.ParseFloat(strArr[8], 64)
+		stdaily.Deal, _ = strconv.Atoi(strings.Replace(strArr[3], ",", "", -1))
+		
+		opTemp:= strings.Replace(strArr[5], ",", "", -1)
+		stdaily.Opening, _ = strconv.ParseFloat(opTemp, 64)
+		
+		hiTemp:= strings.Replace(strArr[6], ",", "", -1)
+		stdaily.Highest, _ = strconv.ParseFloat(hiTemp, 64)
+		
+		loTemp:= strings.Replace(strArr[7], ",", "", -1)
+		stdaily.Lowest, _ = strconv.ParseFloat(loTemp, 64)
+		
+		clTemp:= strings.Replace(strArr[8], ",", "", -1)
+		stdaily.Closing, _ = strconv.ParseFloat(clTemp, 64)
 
 		if strArr[9] == "-" {
 			fluTemp, _ := strconv.ParseFloat(strArr[10], 64)
@@ -258,3 +272,4 @@ func DailyQuotFilter(filename string) error {
 	fmt.Println("存入DB結束")
 	return nil
 }
+
