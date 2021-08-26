@@ -9,7 +9,7 @@ func init() {
 	web.Router("/", &controllers.MainController{})
 	web.Router("/index", &controllers.MainController{}, "*:Index")
 
-	ns := web.NewNamespace("/stockinfo",
+	ns := web.NewNamespace("/financial2",
 		web.NSNamespace("/stockdaily",
 			web.NSRouter("/getdays", &controllers.StockDailyController{}, "Get:GetDays"),
 			web.NSRouter("/filttradingvol", &controllers.StockDailyController{}, "Get:FiltTradingVol"),

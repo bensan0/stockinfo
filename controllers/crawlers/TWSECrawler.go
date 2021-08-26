@@ -21,20 +21,20 @@ import (
 //證交所
 
 //每日三大法人調用
-func DailyCorp(yyyymmdd string) error {
-	filename, err := DownloadDailyCorpTrans(yyyymmdd)
+func DailyCorpTWSE(yyyymmdd string) ([]common.CorporationDailyTrans, error) {
+	filename, err := downloadDailyCorpTransTWSE(yyyymmdd)
 	if err != nil {
-		return err
+		return nil, err
 	}
-	err = DailyCorpFilter(filename)
+	dailycorpTrans, err := dailyCorpFilterTWSE(filename)
 	if err != nil {
-		return err
+		return nil, err
 	}
-	return nil
+	return dailycorpTrans, nil
 }
 
 //下載三大法人每日交易csv
-func DownloadDailyCorpTrans(yyyymmdd string) (string, error) {
+func downloadDailyCorpTransTWSE(yyyymmdd string) (string, error) {
 	fmt.Println("開始下載每日三大法人")
 	var yyyymmddTime time.Time
 	if len(yyyymmdd) == 0 {
@@ -48,7 +48,7 @@ func DownloadDailyCorpTrans(yyyymmdd string) (string, error) {
 		return "", errors.New("六/日休市")
 	}
 	var filedir string = "downloads/"
-	var filename string = "dailycorp_"
+	var filename string = "dailycorptwse_"
 	var sub string = ".csv"
 	url, _ := web.AppConfig.String("corpdailyurl")
 	url = url + yyyymmdd
@@ -78,13 +78,13 @@ func DownloadDailyCorpTrans(yyyymmdd string) (string, error) {
 }
 
 //解析
-func DailyCorpFilter(filename string) error {
+func dailyCorpFilterTWSE(filename string) ([]common.CorporationDailyTrans, error) {
 	corpdailys := []common.CorporationDailyTrans{}
 
 	fmt.Println("每日三大法人處理開始")
 	by, err := ioutil.ReadFile(filename)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	r, _, _ := transform.String(traditionalchinese.Big5.NewDecoder(), string(by))
 	arr := strings.Split(r, `"三大法人買賣超股數",`)
@@ -120,7 +120,7 @@ func DailyCorpFilter(filename string) error {
 		dhtemp, _ := strconv.Atoi(strings.Replace(strArr[17], ",", "", -1))
 		corpdaily.DealerHedge = dhtemp / 1000
 
-		corpdaily.Date, _ = strconv.ParseInt(filename[20:28], 10, 64)
+		corpdaily.Date, _ = strconv.ParseInt(filename[24:32], 10, 64)
 
 		corpdaily.CDUnion = corpdaily.Code + "-" + fmt.Sprint(corpdaily.Date)
 
@@ -130,41 +130,32 @@ func DailyCorpFilter(filename string) error {
 	}
 	err = os.Remove(filename)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	fmt.Println("每日三大法人處理結束")
-
-	fmt.Println("存入DB開始")
-	result := common.DB.Create(corpdailys)
-	if result.Error != nil {
-		fmt.Println("存入DB失敗")
-		return result.Error
-	}
-	fmt.Println("存入DB結束")
-	return nil
+	return corpdailys, nil
 }
 
 //每日收盤行情調用
-func DailyQuot(yyyymmdd string) (bool, error) {
-	filename, err := DownloadDailyQuotation(yyyymmdd)
+func DailyQuotTWSE(yyyymmdd string) ([]common.StockDailyTrans, error) {
+	filename, err := downloadDailyQuotTWSE(yyyymmdd)
 	if err != nil || len(filename) == 0 {
-		return false, err
+		return nil, err
 	}
-	err = DailyQuotFilter(filename)
+	stdailyTrans, err := dailyQuotFilterTWSE(filename)
 	if err != nil {
-		return false, err
+		return nil, err
 	}
-	return true, err
+	return stdailyTrans, err
 }
 
 //下載每日收盤行情(全部(不含權證、牛熊證))csv
-func DownloadDailyQuotation(yyyymmdd string) (string, error) {
+func downloadDailyQuotTWSE(yyyymmdd string) (string, error) {
 	fmt.Println("開始下載每日收盤行情")
 	var yyyymmddTime time.Time
 	if len(yyyymmdd) == 0 {
 		yyyymmddTime = time.Now()
 		yyyymmdd = yyyymmddTime.Format("20060102")
-
 	} else {
 		yyyymmddTime, _ = time.Parse("20060102", yyyymmdd)
 	}
@@ -172,7 +163,7 @@ func DownloadDailyQuotation(yyyymmdd string) (string, error) {
 		return "", errors.New("六/日休市")
 	}
 	var filedir string = "downloads/"
-	var filename string = "dailyquot_"
+	var filename string = "dailyquottwse_"
 	var sub string = ".csv"
 	url, _ := web.AppConfig.String("stockdailyurl")
 	url = url + yyyymmdd
@@ -202,12 +193,12 @@ func DownloadDailyQuotation(yyyymmdd string) (string, error) {
 }
 
 //處理檔案每日收盤行情檔案
-func DailyQuotFilter(filename string) error {
+func dailyQuotFilterTWSE(filename string) ([]common.StockDailyTrans, error) {
 	fmt.Println("每日收盤行情處理開始")
 	stdailys := []common.StockDailyTrans{}
 	by, err := ioutil.ReadFile(filename)
 	if err != nil {
-		return nil
+		return nil, err
 	}
 
 	//字元編碼
@@ -223,24 +214,24 @@ func DailyQuotFilter(filename string) error {
 
 		//數據轉換為模型
 		stdaily := common.StockDailyTrans{}
-		stdaily.Date, _ = strconv.ParseInt(filename[20:28], 10, 64)
+		stdaily.Date, _ = strconv.ParseInt(filename[24:32], 10, 64)
 		strArr[0] = strings.Replace(strArr[0], `"`, "", 1)
 		stdaily.Code = strArr[0]
 		stdaily.Name = strArr[1]
 		tv, _ := strconv.Atoi(strings.Replace(strArr[2], ",", "", -1))
 		stdaily.TradingVol = tv / 1000
 		stdaily.Deal, _ = strconv.Atoi(strings.Replace(strArr[3], ",", "", -1))
-		
-		opTemp:= strings.Replace(strArr[5], ",", "", -1)
+
+		opTemp := strings.Replace(strArr[5], ",", "", -1)
 		stdaily.Opening, _ = strconv.ParseFloat(opTemp, 64)
-		
-		hiTemp:= strings.Replace(strArr[6], ",", "", -1)
+
+		hiTemp := strings.Replace(strArr[6], ",", "", -1)
 		stdaily.Highest, _ = strconv.ParseFloat(hiTemp, 64)
-		
-		loTemp:= strings.Replace(strArr[7], ",", "", -1)
+
+		loTemp := strings.Replace(strArr[7], ",", "", -1)
 		stdaily.Lowest, _ = strconv.ParseFloat(loTemp, 64)
-		
-		clTemp:= strings.Replace(strArr[8], ",", "", -1)
+
+		clTemp := strings.Replace(strArr[8], ",", "", -1)
 		stdaily.Closing, _ = strconv.ParseFloat(clTemp, 64)
 
 		if strArr[9] == "-" {
@@ -249,22 +240,25 @@ func DailyQuotFilter(filename string) error {
 		} else {
 			stdaily.Fluctuation, _ = strconv.ParseFloat(strArr[10], 64)
 		}
+		stdaily.PER, _ = strconv.ParseFloat(strArr[15], 64)
 		stdaily.FluctPercent, _ = strconv.ParseFloat(fmt.Sprintf("%.3f", stdaily.Fluctuation/(stdaily.Closing-stdaily.Fluctuation)*100), 64)
 		stdaily.CDUnion = stdaily.Code + "-" + fmt.Sprint(stdaily.Date)
 		stdailys = append(stdailys, stdaily)
-
 	}
 
 	//刪檔
 	err = os.Remove(filename)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	fmt.Println("每日收盤行情處理結束")
 
-	//持久化
+	return stdailys, nil
+}
+
+func InsertToDB(trans interface{}) error {
 	fmt.Println("存入DB開始")
-	result := common.DB.Create(stdailys)
+	result := common.DB.Create(trans)
 	if result.Error != nil {
 		fmt.Println("存入DB失敗")
 		return result.Error
@@ -272,4 +266,3 @@ func DailyQuotFilter(filename string) error {
 	fmt.Println("存入DB結束")
 	return nil
 }
-

@@ -1,6 +1,9 @@
 package controllers
 
 import (
+	"encoding/json"
+	"fmt"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -8,6 +11,7 @@ import (
 	"github.com/beego/beego/v2/server/web"
 	common "github.com/bensan0/stockinfo/models/common"
 	response "github.com/bensan0/stockinfo/models/response"
+	"github.com/gomodule/redigo/redis"
 )
 
 type stDailyRes struct {
@@ -23,18 +27,12 @@ type StockDailyController struct {
 
 //依據天數與代號獲取個股交易資訊
 func (this *StockDailyController) GetDays() {
+
 	trans := []common.StockDailyTrans{}
-	var sql string
 	today := time.Now()
 	dates := make([]int64, 0)
 	days, _ := this.GetInt("days", 5)
 	code := strings.TrimSpace(this.GetString("code"))
-
-	if len(code) == 0 {
-		sql = "date in ?"
-	} else {
-		sql = "date in ? and code = ?"
-	}
 
 	for i := 0; ; i++ {
 		if len(dates) >= days {
@@ -47,14 +45,42 @@ func (this *StockDailyController) GetDays() {
 		num, _ := strconv.ParseInt(tmp.Format("20060102"), 10, 64)
 		dates = append(dates, num)
 	}
-	result:=common.DB.Where(sql, dates, code).Order("date desc").Order("id").Find(&trans)
-	
-	if result.Error!=nil{
+
+	//快取
+	if common.Cache != nil && days <= 15 {
+		for _, date := range dates {
+			mp := map[string]common.StockDailyTrans{}
+			key := "quot" + fmt.Sprint(date)
+			rpl, err := redis.String(common.Cache.Do("Get", key))
+			if len(rpl) == 2 {
+				continue
+			}
+			if err != nil {
+				this.Data["json"] = &response.CommonRes{Error: err.Error()}
+				this.ServeJSON()
+			}
+			json.Unmarshal([]byte(rpl), &mp)
+			trans = append(trans, mp[code])
+		}
+		this.Data["json"] = &response.CommonRes{Data: trans}
+		this.ServeJSON()
+		return
+	}
+
+	var sql string
+	if len(code) == 0 {
+		sql = "date in ?"
+	} else {
+		sql = "date in ? and code = ?"
+	}
+	result := common.DB.Where(sql, dates, code).Order("date desc").Order("id").Find(&trans)
+
+	if result.Error != nil {
 		this.Data["json"] = &response.CommonRes{Error: result.Error.Error()}
 		this.ServeJSON()
 		return
 	}
-	this.Data["json"] =  &response.CommonRes{Data: trans}
+	this.Data["json"] = &response.CommonRes{Data: trans}
 	this.ServeJSON()
 }
 
@@ -70,7 +96,7 @@ func (this *StockDailyController) FiltTradingVol() {
 
 	percent, _ := this.GetFloat("percent", 40)
 	lowerLimitVol, _ := this.GetInt("lowervol", 3000)
-
+	higherLimitVol, _ := this.GetInt("highervol", 100000)
 	dateNum, _ := strconv.ParseInt(dateStr, 10, 64)
 	arr := []int64{dateNum}
 
@@ -86,7 +112,7 @@ func (this *StockDailyController) FiltTradingVol() {
 		arr = append(arr, before)
 	}
 
-	dateMap := map[string]common.StockDailyTrans{}
+	todayMap := map[string]common.StockDailyTrans{}
 	yesterdayMap := map[string]common.StockDailyTrans{}
 	dailytrans := []common.StockDailyTrans{}
 	result := common.DB.Where("date in ?", arr).Order("id").Find(&dailytrans)
@@ -97,7 +123,7 @@ func (this *StockDailyController) FiltTradingVol() {
 	}
 	for _, dt := range dailytrans {
 		if dt.Date == dateNum {
-			dateMap[dt.Code] = dt
+			todayMap[dt.Code] = dt
 		} else {
 			yesterdayMap[dt.Code] = dt
 		}
@@ -105,22 +131,23 @@ func (this *StockDailyController) FiltTradingVol() {
 
 	resultList := []stDailyRes{}
 	percent = 1 + percent/100
-	for k, v := range dateMap {
+	for k, v := range todayMap {
 		tv := float64(v.TradingVol)
 		ytv := float64(yesterdayMap[k].TradingVol)
 
-		if tv >= ytv*percent {
-			if len(v.Code) == 4 && int(ytv) >= lowerLimitVol {
-				resultList = append(resultList, stDailyRes{
-					Code:     v.Code,
-					Industry: common.IndustIdMap[uint(common.StockCodeMap[v.Code])],
-					Name:     v.Name,
-					Trans:    []common.StockDailyTrans{v, yesterdayMap[k]},
-				})
-			}
+		if len(v.Code) == 4 && int(ytv) >= lowerLimitVol && int(ytv) <= higherLimitVol && tv >= ytv*percent {
+			resultList = append(resultList, stDailyRes{
+				Code:     v.Code,
+				Industry: common.IndustIdMap[uint(common.StockCodeMap[v.Code])],
+				Name:     v.Name,
+				Trans:    []common.StockDailyTrans{v, yesterdayMap[k]},
+			})
 		}
 	}
-
+	//依業種排序
+	sort.Slice(resultList, func(i, j int) bool {
+		return common.IndustCommentMap[resultList[i].Industry] < common.IndustCommentMap[resultList[j].Industry]
+	})
 	this.Data["json"] = &response.CommonRes{Data: resultList}
 	this.ServeJSON()
 }

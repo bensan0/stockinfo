@@ -12,6 +12,7 @@ type StockDailyTrans struct {
 	Lowest       float64 `gorm:"comment:當日最低" json:"lowest"`                                //當日最低
 	Fluctuation  float64 `gorm:"comment:漲跌價差" json:"fluctuation"`                           //漲跌價差 = 今收與昨收價差
 	FluctPercent float64 `gorm:"column:fluc_percent;comment:漲跌幅(%)" json:"flucPercent"`     //漲跌幅(%)
+	PER          float64 `gorm:"column:per;comment:本益比" json:"per"`                         //本益比
 	Date         int64   `json:"date"`                                                      //yyyymmdd
 	CDUnion      string  `gorm:"primarykey;column:cd_union;comment:代號-日期組合,做複合主鍵" json:"-"` //複合主鍵
 }

@@ -26,7 +26,7 @@ func StockBasicInfoCrawl(code string) error {
 		return err
 	}
 	err = InfoUpsert(sbi)
-	if err != nil {
+	if err!=nil{
 		tools.ErrorLogging(err)
 	}
 	return err

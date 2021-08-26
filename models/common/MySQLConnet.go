@@ -49,6 +49,7 @@ func connectDB() {
 
 	DB, err = gorm.Open(mysql.Open(address), &gorm.Config{Logger: logger.Default.LogMode(logger.Info)})
 	if err != nil {
+		fmt.Println("DB連接失敗")
 		fmt.Println(err)
 	} else {
 		fmt.Println("DB連接成功")
