@@ -3,7 +3,7 @@
 function getCorpDaily() {
     let date = document.getElementById('cpdailyyyyymmdd').value;
     console.log(date)
-    let req = new Request('http://127.0.0.1:8080/financial2/crawlers/corpdaily?date=' + date);
+    let req = new Request('http://127.0.0.1:8080/stockinfo/crawlers/corpdaily?date=' + date);
     fetch(req)
         .then(res => {
             if (res.status == 200) {
@@ -29,7 +29,7 @@ function getCorpDaily() {
 function getStockDaily() {
     let date = document.getElementById('stdailyyyyymmdd').value;
     console.log(date)
-    let req = new Request('http://127.0.0.1:8080/financial2/crawlers/dailyquot?date=' + date);
+    let req = new Request('http://127.0.0.1:8080/stockinfo/crawlers/dailyquot?date=' + date);
     fetch(req)
         .then(res => {
             if (res.status == 200) {
@@ -53,7 +53,7 @@ function getStockDaily() {
 }
 
 function getDistribution() {
-    let req = new Request('http://127.0.0.1:8080/financial2/crawlers/distribution');
+    let req = new Request('http://127.0.0.1:8080/stockinfo/crawlers/distribution');
     fetch(req)
         .then(res => {
             if (res.status == 200) {
@@ -82,7 +82,7 @@ function filtTradingvol() {
     let percent = document.getElementById('filterpercent').value
     let lowervol = document.getElementById('filterlowerlimit').value
     let highervol = document.getElementById('filterhigherlimit').value
-    let req = new Request('http://127.0.0.1:8080/financial2/stockdaily/filttradingvol?' + 'date=' + date + '&percent=' + percent + '&lowervol=' + lowervol + '&highervol=' + highervol /*+ '&fluc=' + fluc*/);
+    let req = new Request('http://127.0.0.1:8080/stockinfo/stockdaily/filttradingvol?' + 'date=' + date + '&percent=' + percent + '&lowervol=' + lowervol + '&highervol=' + highervol /*+ '&fluc=' + fluc*/);
 
     fetch(req)
         .then(res => {
@@ -131,7 +131,7 @@ function getStockTrans() {
     clearStockTrans();
     let days = document.getElementById('stocktransdays').value
     let code = document.getElementById('stocktranscode').value
-    let req = new Request('http://127.0.0.1:8080/financial2/stockdaily/getdays?' + 'days=' + days + '&code=' + code);
+    let req = new Request('http://127.0.0.1:8080/stockinfo/stockdaily/getdays?' + 'days=' + days + '&code=' + code);
 
     fetch(req)
         .then(res => {
@@ -172,7 +172,7 @@ function getCorpTrans() {
     let days = document.getElementById('corptransdays').value
     let code = document.getElementById('corptranscode').value
 
-    let req = new Request('http://127.0.0.1:8080/financial2/corpdaily/getdays?code=' + code + '&days=' + days);
+    let req = new Request('http://127.0.0.1:8080/stockinfo/corpdaily/getdays?code=' + code + '&days=' + days);
 
     fetch(req)
         .then(res => {
