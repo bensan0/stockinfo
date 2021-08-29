@@ -97,10 +97,9 @@ func (this *StockDailyController) FiltTradingVol() {
 	percent, _ := this.GetFloat("percent", 40)
 	lowerLimitVol, _ := this.GetInt("lowervol", 3000)
 	higherLimitVol, _ := this.GetInt("highervol", 100000)
-	dateNum, _ := strconv.ParseInt(dateStr, 10, 64)
-	arr := []int64{dateNum}
+	arr := []int64{}
 
-	for i := 1; ; i++ {
+	for i := 0; ; i++ {
 		if len(arr) >= 2 {
 			break
 		}
@@ -122,7 +121,7 @@ func (this *StockDailyController) FiltTradingVol() {
 		return
 	}
 	for _, dt := range dailytrans {
-		if dt.Date == dateNum {
+		if dt.Date == arr[0] {
 			todayMap[dt.Code] = dt
 		} else {
 			yesterdayMap[dt.Code] = dt
